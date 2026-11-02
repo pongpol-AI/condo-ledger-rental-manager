@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+*.env
+../2567/
+../2568/
+../2569/
+../*.pdf
+../*.xlsx
