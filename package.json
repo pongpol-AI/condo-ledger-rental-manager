@@ -1,0 +1,6 @@
+{
+  "name": "condo-ledger-private",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": { "local": "node server.js" }
+}
