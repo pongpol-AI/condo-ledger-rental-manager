@@ -31,4 +31,8 @@ Chrome/Edge รองรับปุ่ม “เลือกโฟลเดอ�
 
 ## Backup
 
-ใช้ปุ่ม "สำรองข้อมูล" ในแอปเพื่อ export รายการทรัพย์สินและการเงินเป็น JSON เก็บในโฟลเดอร์ backup ที่คุณเลือกเอง เอกสารที่เพิ่มผ่านแอปเก็บใน IndexedDB; ต้อง export/คัดลอกแยกก่อนล้างข้อมูลเบราว์เซอร์หรือย้ายเครื่อง
+ใช้ปุ่ม "Full Backup" ในแอปเพื่อ export ZIP ที่รวมรายการทั้งหมดและไฟล์แนบจาก IndexedDB เก็บไว้ในโฟลเดอร์ backup ที่คุณเลือกเอง ก่อนล้าง browser data หรือย้ายเครื่อง ให้สร้าง backup และใช้ Restore Backup ในปลายทาง
+
+## Property & Lease Management
+
+เวอร์ชันนี้เพิ่ม Contract Generator, Contract Archive, Property Photo Gallery และ Status Settings แล้ว ข้อมูลรวมถึงไฟล์แนบอยู่ใน IndexedDB และ Full Backup จะสร้าง ZIP ที่รวม metadata กับไฟล์แนบทั้งหมด ใช้ `npm run build` เพื่อตรวจ syntax และ `npm test` เพื่อตรวจ rule ป้องกันช่วงสัญญาทับซ้อน
