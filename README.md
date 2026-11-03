@@ -1,6 +1,6 @@
 # Condo Ledger
 
-ระบบบริหารคอนโดสำหรับผู้ใช้คนเดียว ใช้งานในเครื่องเป็นหลัก GitHub ใช้เก็บเฉพาะโค้ด ไม่ใช่ที่เก็บข้อมูลหรือเอกสาร
+ระบบบริหารคอนโดสำหรับผู้ใช้คนเดียว: หน้าเว็บเปิดออนไลน์ผ่าน GitHub Pages แต่ข้อมูล/เอกสารอยู่ใน browser และ PC ของผู้ใช้ GitHub เก็บเฉพาะโค้ด
 
 ## เริ่มใช้งาน
 
@@ -21,7 +21,13 @@
 
 - สร้าง repository แบบ **Private** เพื่อ version control ของ source code เท่านั้น
 - ห้าม commit โฟลเดอร์เอกสารคอนโด, ใบเสร็จ, สัญญา, ไฟล์ backup หรือข้อมูลการเงินที่ export แล้ว
-- ไม่ต้องเชื่อม GitHub Pages หากต้องการให้ระบบทำงานเฉพาะใน PC
+- GitHub Pages publish เฉพาะ `dist/` ผ่าน workflow; หน้าเว็บออนไลน์จึงไม่มีไฟล์เอกสารหรือข้อมูลธุรกรรมของคุณ
+
+## Online URL with local files
+
+หลัง enable GitHub Pages และ push branch `main` หน้าเว็บจะอยู่ที่ `https://pongpol-ai.github.io/condo-ledger-rental-manager/` ข้อมูลที่คุณบันทึกในเว็บอยู่เฉพาะ browser + device นั้น และจะไม่แสดงเมื่อเปิด URL เดียวกันในเครื่องอื่น
+
+Chrome/Edge รองรับปุ่ม “เลือกโฟลเดอร์” บนหน้า Document Vault ผ่าน File System Access API (ต้องเลือกโฟลเดอร์และอนุญาตด้วยตัวเอง); GitHub Pages ใช้ HTTPS ซึ่งจำเป็นสำหรับ API นี้. Firefox/Safari ใช้การเลือกไฟล์แบบปกติได้ แต่ยังไม่รองรับตัวเลือกโฟลเดอร์นี้ครบถ้วน
 
 ## Backup
 
